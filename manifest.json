@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "BBVA Directory",
+  "description": "This extension allows you to search for BBVA employees",
+  "version": "1.0",
+  "icons":{
+    "64":"img/icon.png"
+  },
+
+  "browser_action": {
+    "default_icon": "img/icon.png",
+    "default_popup": "directory.html",
+    "default_title": "search BBVA directory"
+  },
+  "permissions": [
+    "activeTab","tabs","http://*/*","https://*/*","storage","notifications" ],
+  "background":{
+      "scripts": ["background.js", "lib/jquery-2.1.4.min.js","lib/jsonpath-0.8.0.js"]
+  },
+  "options_page": "options.html",
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "web_accessible_resources": ["options.html"]
+}

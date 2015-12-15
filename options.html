@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head><title>BBVA Directory Options</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/options.css">
+	<script type="text/javascript" src="lib/jquery-2.1.4.min.js"></script>
+</head>
+<body >
+	<div class="mainBlock">
+			<h3 class="title">Search BBVA directory Options</h3>
+	</div>
+	<div class="container small">	
+		<div class="row">	
+			<div class="col-md-3">	
+				<div class="input-group">			
+					<label style="width: 55px;" class="input-group-addon" id="basic-addon1" for="userID">User Name</label>  
+					<input  class="form-control" type="text" id="userID" placeholder="your usual user" aria-describedby="basic-addon1">
+				</div>
+			</div>
+		</div>
+		<div class="row">	
+			<div class="col-md-3">
+				<div class="input-group">	
+					<label style="width: 55px;" class="input-group-addon" id="basic-addon2" for="password">Password</label>
+					<input  class="form-control" type="password" id="password" placeholder="type '12345' as default password" aria-describedby="basic-addon2">
+				</div>
+			</div>
+			<div class="col-md-1">
+				<div class="input-group">					
+					<button class="btn btn-default" id="save">Save</button>
+				</div>
+			</div>
+			<div class="col-md-1">
+				<div class="input-group">					
+					<button class="btn btn-default" id="clearBtn">Clear All</button>
+				</div>
+			</div>
+			<div class="col-md-1">
+				<div class="input-group">					
+					<button class="btn btn-default" id="ContactDetailsBtn">get CD</button>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div id="status" class="text-success bg-info"></div>
+			</div>
+		</div>			
+	</div>
+	<br>
+	<div class="container">
+		<div id="configuration" class="panel panel-primary ">
+			<div class="panel-heading">Configuration</div>
+		  	<div class="panel-body">
+		  		<form class="form-horizontal" role="form">
+			  		<div class="form-group">
+				      <label class="control-label col-sm-2">userID:</label>
+				      <div class="col-sm-10">
+				        <p class="form-control-static" id="_userID"></p>
+				      </div>
+				    </div>
+				    <div class="form-group">
+				      <label class="control-label col-sm-2">linesName:</label>
+				      <div class="col-sm-10">
+				        <p class="form-control-static" id="linesName"></p>
+				      </div>
+				    </div>	
+			  		<div class="form-group">
+				      <label class="control-label col-sm-2">deviceName:</label>
+				      <div class="col-sm-10">
+				        <p class="form-control-static" id="deviceName"></p>
+				      </div>
+				    </div>
+				    <div class="form-group">
+				      <label class="control-label col-sm-2">phoneDesc:</label>
+				      <div class="col-sm-10">
+				        <p class="form-control-static" id="phoneDesc"></p>
+				      </div>
+				    </div>
+				    <div class="form-group">
+				      <label class="control-label col-sm-2">phoneType:</label>
+				      <div class="col-sm-10">
+				        <p class="form-control-static" id="phoneType"></p>
+				      </div>				   
+				    </div>	
+				    <div class="form-group">
+				      <label class="control-label col-sm-2"></label>
+				      <div class="col-sm-4">
+				        <img src="" style="width:128px;height:128px;" class="form-control-static" id="phoneTypeImg"></p>
+				      </div>				    					    
+				    </div>
+			    </div>	    	
+		  	</div>
+		</div>	
+	</div>
+
+
+<script src="js/options.js"></script>
+</body>
+</html>
